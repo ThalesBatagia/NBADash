@@ -21,9 +21,6 @@ df = load_data()
 if 'tm' not in df.columns:
     st.error("A coluna 'tm' não foi encontrada no DataFrame.")
 else:
-    # Título do Dashboard
-    st.title("Dashboard de Estatísticas da NBA")
-
     # Adicionar a coluna com o nome completo do time
     nba_teams = {
         "MIL": "Milwaukee Bucks",
